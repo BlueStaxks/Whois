@@ -1,0 +1,24 @@
+push   rbp
+mov    rbp,rsp
+mov    DWORD PTR [rbp-0x4],0x0
+mov    DWORD PTR [rbp-0x8],0xa
+mov    eax,DWORD PTR [rbp-0x8]
+mov    DWORD PTR [rbp-0xc],eax
+mov    DWORD PTR [rbp-0x8],0x7b
+mov    eax,DWORD PTR [rbp-0xc]
+mov    DWORD PTR [rbp-0x8],eax
+mov    DWORD PTR [rbp-0x8],0xa
+mov    eax,DWORD PTR [rbp-0xc]
+mov    DWORD PTR [rbp-0x10],eax
+mov    eax,DWORD PTR [rbp-0x10]
+mov    DWORD PTR [rbp-0x8],eax
+mov    eax,DWORD PTR [rbp-0xc]
+add    eax,DWORD PTR [rbp-0x8]
+sub    eax,DWORD PTR [rbp-0x10]
+mov    DWORD PTR [rbp-0x14],eax
+mov    eax,DWORD PTR [rbp-0x14]
+mov    ecx,0xa
+cdq
+idiv   ecx
+pop    rbp
+ret

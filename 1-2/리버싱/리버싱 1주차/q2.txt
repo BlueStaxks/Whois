@@ -1,0 +1,29 @@
+push   rbp
+mov    rbp,rsp
+sub    rsp,0x50
+movabs rax,0x20454d4f434c4557
+movabs rdx,0x53494f4857204f54
+mov    QWORD PTR [rbp-0x50],rax
+mov    QWORD PTR [rbp-0x48],rdx
+movabs rax,0x4953524556455220
+movabs rdx,0x5353414c4320474e
+mov    QWORD PTR [rbp-0x40],rax
+mov    QWORD PTR [rbp-0x38],rdx
+movabs rax,0x4953204d2749202e
+movabs rdx,0x20594c455245434e
+mov    QWORD PTR [rbp-0x30],rax
+mov    QWORD PTR [rbp-0x28],rdx
+movabs rax,0x204f542044414c47
+movabs rdx,0x4c20412045564947
+mov    QWORD PTR [rbp-0x20],rax
+mov    QWORD PTR [rbp-0x18],rdx
+movabs rax,0x5420455255544345
+movabs rdx,0x554f59204f
+mov    QWORD PTR [rbp-0x10],rax
+mov    QWORD PTR [rbp-0x8],rdx
+lea    rax,[rbp-0x50]
+mov    rdi,rax
+call   0x1030 <puts@plt>
+mov    eax,0x0
+leave
+ret

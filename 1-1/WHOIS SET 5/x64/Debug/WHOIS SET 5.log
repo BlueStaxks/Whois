@@ -1,0 +1,8 @@
+﻿  set5-3.c
+D:\WHOIS SET 5\set5-3.c(41,23): warning C4047: '함수': 'char *'의 간접 참조 수준이 'char (*)[11]'과(와) 다릅니다.
+D:\WHOIS SET 5\set5-3.c(41,20): warning C4024: 'strcpy': 형식 및 실제 매개 변수 1의 형식이 서로 다릅니다.
+D:\WHOIS SET 5\set5-3.c(41,44): warning C4047: '함수': 'char *'의 간접 참조 수준이 'char (*)[11]'과(와) 다릅니다.
+D:\WHOIS SET 5\set5-3.c(41,41): warning C4024: 'result': 형식 및 실제 매개 변수 1의 형식이 서로 다릅니다.
+D:\WHOIS SET 5\set5-3.c(44,21): warning C4047: '함수': 'const char *'의 간접 참조 수준이 'char (*)[11]'과(와) 다릅니다.
+D:\WHOIS SET 5\set5-3.c(44,18): warning C4024: 'puts': 형식 및 실제 매개 변수 1의 형식이 서로 다릅니다.
+  WHOIS SET 5.vcxproj -> D:\WHOIS SET 5\x64\Debug\WHOIS SET 5.exe
