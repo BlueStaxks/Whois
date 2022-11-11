@@ -1,6 +1,6 @@
 aaaaaaaaaaaaaaa //2번 째 글자는 a
 
-aa5yaaaaaaaaaaa //3,4번 째 글자는 5y
+aa5yaaaaaaaaaaa //3,4번 째 글자는 5y  //뒤는 달라도 상관없나봄
 
 aa5yR3versing //5y뒤에 R3versing
 
