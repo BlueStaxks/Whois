@@ -5,3 +5,8 @@ aa5yaaaaaaaaaaa //3,4번 째 글자는 5y  //뒤는 달라도 상관없나봄
 aa5yR3versing //5y뒤에 R3versing
 
 Ea5yR3versing //맨 앞에 E
+
+
+근데 굳이 비밀번호를 찾지 않더라도
+00401135 의 push 10을 40으로,
+0040113C 의 push easy_crackme.406030을 406044로 바꾸면 정답 화면이 나온다.
