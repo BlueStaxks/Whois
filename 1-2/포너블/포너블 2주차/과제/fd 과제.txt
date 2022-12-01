@@ -1,0 +1,17 @@
+안에 보면 fd.c라는 파일이 있다.
+
+이 파일은 c코드이고 안에 보면 fd라는 게 있는데 이 값이 read함수에 사용된다.
+
+fd는 file descriptor로써 0이 기본이다.
+
+코드에서 fd를 입력받고 - 0x1234를 해준다.
+
+atoi는 문자열로 된 수를 정수로 바꿔주는데 10진수 기준이므로 4660을 넣어줘야
+fd가 0이 될 것이다.
+
+./fd 4660 을 입력하고
+read할 때 LETMEWIN 을 입력하면
+
+mommy! I think I know what a file descriptor is!!
+
+라는 문자열이 나오고 이것이 정답이다.

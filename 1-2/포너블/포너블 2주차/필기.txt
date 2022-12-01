@@ -1,0 +1,2 @@
+fd는 file descriptor로 자주 쓰이고
+이 값은 0인게 기본임
